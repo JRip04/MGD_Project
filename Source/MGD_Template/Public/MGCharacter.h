@@ -21,11 +21,21 @@ public:
 
 	//Rotate the character controller
 	UFUNCTION(BlueprintCallable, Category="Controller")
-	void Pure_RoatateController(const FVector2D Axis); 
+	void Pure_RotateController(const FVector2D Axis); 
 
+protected:
+	UFUNCTION(Server, Reliable, Category="Replication")
+	void Server_RepPitch(const float& Pitch);
+
+	UFUNCTION(NetMulticast, Reliable, Category="Replication")
+	void Multi_RepPitch(const float& Pitch);
+	
 public:
 	UPROPERTY(BlueprintReadOnly, Category="Movement")
 	// Move axis of Character
 	FVector2D pMoveAxis;
-	
+
+	//Replicate Pitch for Character
+	UPROPERTY(BlueprintReadOnly, Category="Pitch")
+	float pRepPitch;
 };
