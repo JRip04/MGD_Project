@@ -12,15 +12,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e8f9491f-c4a9-4b03-9803-ab49753fa621" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.MGD_Template/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MGD_Template/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Config/DefaultEngine.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultEngine.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/MyContent/Characters/BP_Character.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/MyContent/Characters/BP_Character.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/MyContent/Core/GM_Battle.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/MyContent/Core/GM_Battle.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/MyContent/Maps/Lvl_Test.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/MyContent/Maps/Lvl_Test.umap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/MyContent/Materials/M_UI_Circle.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/MyContent/Materials/M_UI_Circle.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/MyContent/Player/BP_PlayerController.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/MyContent/Player/BP_PlayerController.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/MyContent/Player/Inputs/IMC_CharacterControls.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/MyContent/Player/Inputs/IMC_CharacterControls.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/MyContent/Weapons/BP_Weapon.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/MyContent/Weapons/BP_Weapon.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Characters/Mannequins/Materials/Instances/Manny/MI_Manny_01.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Characters/Mannequins/Materials/Instances/Manny/MI_Manny_01.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Characters/Mannequins/Materials/Instances/Manny/MI_Manny_02.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Characters/Mannequins/Materials/Instances/Manny/MI_Manny_02.uasset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -520,6 +513,7 @@
       <workItem from="1720407534951" duration="2096000" />
       <workItem from="1720704452820" duration="758000" />
       <workItem from="1720867824829" duration="3206000" />
+      <workItem from="1720929526489" duration="4141000" />
     </task>
     <servers />
   </component>
