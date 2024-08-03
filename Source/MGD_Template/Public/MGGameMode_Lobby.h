@@ -13,5 +13,18 @@ UCLASS()
 class MGD_TEMPLATE_API AMGGameMode_Lobby : public AMGGameMode
 {
 	GENERATED_BODY()
+
+	// Allows other Classes to Use that function
+public:
+	
+
+	// Only this class and Classes Derived can use this function
+protected:
+	virtual void OnPostLogin(AController* NewPlayer) override;
+	
+	// Only this class can access these functions
+private:
+	
+	
 	
 };
