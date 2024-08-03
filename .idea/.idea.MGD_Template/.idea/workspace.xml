@@ -11,12 +11,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e8f9491f-c4a9-4b03-9803-ab49753fa621" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.MGD_Template/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MGD_Template/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/MyContent/Core/GM_Lobby.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/MyContent/Core/GM_Lobby.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/MGD_Template/Private/MGGameMode_Lobby.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/MGD_Template/Private/MGGameMode_Lobby.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/MGD_Template/Public/MGGameMode_Lobby.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/MGD_Template/Public/MGGameMode_Lobby.h" afterDir="false" />
-    </list>
+    <list default="true" id="e8f9491f-c4a9-4b03-9803-ab49753fa621" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -522,7 +517,7 @@
       <workItem from="1720929526489" duration="4141000" />
       <workItem from="1721012965321" duration="1186000" />
       <workItem from="1721617274415" duration="782000" />
-      <workItem from="1722662492061" duration="8736000" />
+      <workItem from="1722662492061" duration="8777000" />
     </task>
     <servers />
   </component>
