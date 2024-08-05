@@ -16,10 +16,11 @@ class MGD_TEMPLATE_API UMGGameInstance : public UGameInstance
 
 	// Allows other Classes to Use that function
 public:
+	UFUNCTION(BlueprintCallable, Category="Login")
 	void loginEOS();
 
 	// Only this class and Classes Derived can use this function
-protected:
+protected: 
 	
 	// Only this class can access these functions
 private:

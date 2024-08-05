@@ -1,4 +1,4 @@
-// Fill out your copyright notice in the Description page of Project Settings.
+	// Fill out your copyright notice in the Description page of Project Settings.
 
 
 #include "MGGameInstance.h"
@@ -18,4 +18,11 @@ void UMGGameInstance::loginEOS()
 
 	if (!identityRef)
 		return;
+
+	FOnlineAccountCredentials accCreds;
+	accCreds.Id = FString();
+	accCreds.Token = FString();
+	accCreds.Type = FString(TEXT("accountportal"));
+	
+	identityRef->Login(0, accCreds);
 }
