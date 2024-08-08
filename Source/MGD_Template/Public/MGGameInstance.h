@@ -16,6 +16,8 @@ class MGD_TEMPLATE_API UMGGameInstance : public UGameInstance
 
 	// Allows other Classes to Use that function
 public:
+	virtual void Init() override;
+	
 	UFUNCTION(BlueprintCallable, Category="Login")
 	void loginEOS();
 
