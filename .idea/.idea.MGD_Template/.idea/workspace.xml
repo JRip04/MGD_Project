@@ -14,7 +14,7 @@
     <list default="true" id="f844eb87-3bd1-481f-9629-ecb459d174e3" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MGD_Template/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MGD_Template/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/MyContent/Core/BP_GameInstace.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/MyContent/Core/BP_GameInstace.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/MyContent/Maps/Lvl_Lobby.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/MyContent/Maps/Lvl_Lobby.umap" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/MyContent/Player/Lobby/BP_UI_Lobby.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/MyContent/Player/Lobby/BP_UI_Lobby.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/MGD_Template/Private/MGGameInstance.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/MGD_Template/Private/MGGameInstance.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/MGD_Template/Public/MGGameInstance.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/MGD_Template/Public/MGGameInstance.h" afterDir="false" />
     </list>
@@ -31,7 +31,7 @@
     <setting file="file://$PROJECT_DIR$/Source/MGD_Template/Public/MGGameInstance.h" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="Toolset" />
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
@@ -246,18 +246,6 @@
         <option name="USE_EXTERNAL_CONSOLE" value="0" />
         <option name="TERMINAL_INTERACTION_BEHAVIOR" value="FORCE_CONSOLE" />
       </configuration_15>
-      <configuration_16>
-        <option name="CONFIGURATION" value="" />
-        <option name="PLATFORM" value="" />
-        <option name="PROJECT_FILE_PATH" value="$PROJECT_DIR$/Intermediate/ProjectFiles/MGD_Template.vcxproj" />
-        <option name="CURRENT_LAUNCH_PROFILE" value="Local" />
-        <option name="EXE_PATH" value="$(TargetPath)" />
-        <option name="PROGRAM_PARAMETERS" value="" />
-        <option name="WORKING_DIRECTORY" value="$(ProjectDir)" />
-        <option name="PASS_PARENT_ENVS" value="1" />
-        <option name="USE_EXTERNAL_CONSOLE" value="0" />
-        <option name="TERMINAL_INTERACTION_BEHAVIOR" value="AUTO_DETECT" />
-      </configuration_16>
       <option name="DEFAULT_PROJECT_PATH" value="$PROJECT_DIR$/Intermediate/ProjectFiles/MGD_Template.vcxproj" />
       <option name="AUTO_SELECT_PRIORITY" value="0" />
       <method v="2">
@@ -519,6 +507,7 @@
       <workItem from="1722826693092" duration="5057000" />
       <workItem from="1723117512542" duration="76000" />
       <workItem from="1723118092454" duration="2051000" />
+      <workItem from="1723334332431" duration="16780000" />
     </task>
     <servers />
   </component>
