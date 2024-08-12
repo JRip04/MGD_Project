@@ -42,6 +42,10 @@ public:
 
 	UFUNCTION(BlueprintCallable, Category="Session")
 	void FindAndJoinSession();
+
+//Start a lobby game if one exists
+	UFUNCTION(BlueprintCallable, Category="Session")
+	void StartLobbyGame();
 	
 
 	// Only this class and Classes Derived can use this function

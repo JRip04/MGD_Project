@@ -4,6 +4,7 @@
 #include "MGGameInstance.h"
 #include "OnlineSubsystem.h"
 #include "OnlineSubsystemUtils.h"
+#include "GameFramework/GameModeBase.h"
 #include "Online/OnlineSessionNames.h"
 
 	UMGGameInstance::UMGGameInstance()
@@ -174,7 +175,14 @@ void UMGGameInstance::loginEOS()
 		if(!sessionRef)
 			return;
 
+		UE_LOG(LogTemp, Warning, TEXT("Finding sessions"))
 		sessionRef->FindSessions(0, FoundSessions.ToSharedRef());
+	}
+
+	void UMGGameInstance::StartLobbyGame()
+	{
+		GetWorld()->GetAuthGameMode()->bUseSeamlessTravel = true;
+		GetWorld()->ServerTravel("/Game/MyContent/Maps/Lvl_Test", false);
 	}
 
 	void UMGGameInstance::EosLoginComplete(int32 LocalUserNum, bool bWasSuccessful, const FUniqueNetId& UserId,
@@ -191,36 +199,45 @@ void UMGGameInstance::loginEOS()
 
 	void UMGGameInstance::SessionFindComplete(bool bWasSuccessful)
 	{
+		UE_LOG(LogTemp, Warning, TEXT("Searching sessions complete"))
+		
 		if(!bWasSuccessful)
 		{
 			UE_LOG(LogTemp, Error, TEXT("FAILED TO FIND SESSION"))
+			OnSessionJoinComplete(false);
 			return;
 		}
-			
 
+		UE_LOG(LogTemp, Warning, TEXT("Getting oss"))
 		const IOnlineSubsystem* ossRef = Online::GetSubsystem(GetWorld());
 
-		if(ossRef)
+		if(!ossRef)
 			return;
 
+		UE_LOG(LogTemp, Warning, TEXT("Getting session ref"))
 		const IOnlineSessionPtr sessionRef = ossRef->GetSessionInterface();
 
 		if (!sessionRef)
 			return;
 
+		UE_LOG(LogTemp, Warning, TEXT("Searching through results"))
 		if(FoundSessions->SearchResults.IsEmpty())
 		{
-			UE_LOG(LogTemp, Error, TEXT("FAILED TO FIND SESSIONS"))
+			UE_LOG(LogTemp, Error, TEXT("NO SESSIONS FOUND"))
+			OnSessionJoinComplete(false);
 			return;
 		}
 
 		UE_LOG(LogTemp, Warning, TEXT("FOUND SESSIONS, ATTEMPTING TO JOIN"))
+
+		//Join the sessions that is the first session found
 		sessionRef->JoinSession(0, MGSESSION_NAME, FoundSessions->SearchResults[0]);
 	}
 
 	void UMGGameInstance::SessionJoinComplete(FName SessionName, EOnJoinSessionCompleteResult::Type Result)
 	{
 		OnSessionJoinComplete(Result == EOnJoinSessionCompleteResult::Success);
+		
 		if(Result != EOnJoinSessionCompleteResult::Success)
 		{
 			UE_LOG(LogTemp, Error, TEXT("FAILED TO JOIN SESSION"))
